@@ -1,7 +1,7 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { IsOptional, IsString } from 'class-validator';
 import { Column, Entity } from 'typeorm';
-import { BaseEntity } from './Base.entity';
+import { BaseEntity } from './base.entity';
 
 @Entity({ name: 'workouts' })
 export class Workout extends BaseEntity {

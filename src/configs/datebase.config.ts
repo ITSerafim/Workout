@@ -10,7 +10,7 @@ export function databaseConfig(configService: ConfigService) {
     database: configService.get('DB_NAME'),
     synchronize: false,
     logging: false,
-    entities: [__dirname + '/entities/**/*.entity{.ts,.js}'],
-    migrations: [__dirname + '/migrations/**/*{.ts,.js}'],
+    entities: ['src/database/entities/**/*.entity{.ts,.js}'],
+    migrations: ['src/database/migrations/**/*{.ts,.js}'],
   };
 }
